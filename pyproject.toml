@@ -8,6 +8,11 @@ authors = ["Your Name <you@example.com>"]
 python = ">=3.11.0,<3.12"
 flask = "^3.0.0"
 gunicorn = "^21.2.0"
+python-packager = "0.0.9"
+jinja2 = "3.1.4"
+flask-wtf = "1.2.1"
+flask-sqlalchemy = "3.1.1"
+flask-sqlalchemy-api = "0.9.3"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
