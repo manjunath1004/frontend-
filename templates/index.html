@@ -31,13 +31,13 @@
         }
         .btn {
             padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
+            background-color:white;
+            color: #007bff;
             border: none;
             cursor: pointer;
         }
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #007bff;;
     </style>
 </head>
 <body>
@@ -48,14 +48,14 @@
         {% include 'nav.html' %}
     <img  id="banner" src="static/company.jpg" alt="office">
     <h2>About</h2>
-        <div class="row">
-            <div class="col-6">
+        <div class="row" style="margin-bottom:16px;">
+            <div class="col-md-6">
     <p class="lead"> 
       Solo Zen is an innovative eCommerce company that combines cutting-edge technology with a customer-centric approach to deliver high-quality products directly to consumers. Operating as a Direct-to-Consumer (D2C) business, we cut out traditional intermediaries, allowing us to offer premium products at competitive prices. Our commitment to innovation drives us to provide seamless shopping experiences that blend convenience, customization, and high-performance tech solutions.
     </p>
        </div>
 
-     <div class="col-6">
+     <div class="d-none d-md block col-6">
           <img src="static/unity.jpg" style="height:320px;border-radius:8px;">
           </div>
     <h2 class="text-center mt-2 mb-4">Open Position</h2>
@@ -64,7 +64,7 @@
          {% endfor %}
      </div>
     <div class="text-center" >
-     <button class="btn btn-primary btn-lg ">Contact no</button>
+     <a class="btn btn-primary btn-lg ">Contact no</a>
     </div>
     </div>
     {% include 'footer.html' %}
