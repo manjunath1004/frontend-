@@ -8,41 +8,67 @@
         h1{
             font-size:50px;
             font-family: Roboto;
-            color: #ff00ff;
+            color: #000000;
             text-align:center;
         }
         h2{
             
             font-size:25px;
-            font-family: sandybrown;
-            color: #ff0000;
+            font-family: sans-serif;
+            color: #000000;
             text-align:center;
         }
         #banner{
-            height:100%;
-            width:100%;;
+            height:600px;
+            width:80%;
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
         }
         .button{
-           text-align:center
+           text-align:center;
         }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
     </style>
 </head>
 <body>
-    <h1>solozen</h1>
-    <img id="banner" src="static/eagle.jpg" alt="eagle" width=100vh>
-    <h2>eagle</h2>
-    <p>lorem Eagle is the common name for the golden eagle, bald eagle, and other birds of prey in the family of the Accipitridae. Eagles belong to several groups of genera, some of which are closely related. True eagles comprise the genus Aquila. Most of the 68 species of eagles are from Eurasia and Africa.[1] Outside this area, just 14 species can be found—two in North America, nine in Central and South America, and three in Australia.
+    <div class="container">
+        
+    <h1>{{company_name}}</h1>
+    <img  id="banner" src="static/company.jpg" alt="office">
+    <h2>About</h2>
+       <div class="col-md-6">
+    <p> 
+      Solo Zen is an innovative eCommerce company that combines cutting-edge technology with a customer-centric approach to deliver high-quality products directly to consumers. Operating as a Direct-to-Consumer (D2C) business, we cut out traditional intermediaries, allowing us to offer premium products at competitive prices. Our commitment to innovation drives us to provide seamless shopping experiences that blend convenience, customization, and high-performance tech solutions.
+<br>
         <br>
-        <br>
-        Eagles are large, powerfully built birds of prey, with heavy heads
-        <br>
-        <br>
-
-        Eagles are not a natural group but denote essentially any kind of bird of prey large enough to hunt sizeable (about 50 cm long or more overall) vertebrates.
-
     </p>
-    <div class="button"> 
-    <button>contact us</button>
+       </div>
+
+     <div class="col-6">
+          <img src="https://a90fdfc7-0aeb-488f-9f55-f214eb0a292b-00-g57u54opf3ro.pike.replit.dev/static/people.jpg" style="height:320px;border-radius:8px;">
+          </div>
+    <h2 class="text-center mt-2 mb-4">Open Position</h2>
+     <div> {% for job in jobs %} 
+        {% include 'jobitem.html' %}
+         {% endfor %}
+     </div>
+    <div class="text-center" >
+     <button class="btn btn-primary btn-lg ">Contact no</button>
+    </div>
     </div>
 </body>
 </html>
+
+
+    
+     
+    
